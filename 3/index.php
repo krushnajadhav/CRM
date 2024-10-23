@@ -9,15 +9,19 @@
         {
             const dropdown = document.getElementById("myDropdown");
             const textField = document.getElementById("myTextField");
-            if (dropdown.value === "Yes") {
+            if (dropdown.value === "Yes")
+            {
                 textField.required = true;
-            } else {
+            }
+            else
+            {
                 textField.required = false;
             }
         }
     </script>
 </head>
 <body>
+
     <form action="process.php" method="post">
         <label for="myDropdown">Choose an option:</label>
         <select id="myDropdown" name="dropdown" onchange="toggleRequired()">
@@ -35,5 +39,6 @@
 
         <input type="submit" value="Submit">
     </form>
+    
 </body>
 </html>
