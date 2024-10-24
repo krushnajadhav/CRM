@@ -10,7 +10,8 @@ $hook_array['after_login'][] = Array(
     'logLogin'
 );
 
-class LogicHooks {
+class LogicHooks 
+{
     public function logLogin($bean, $event, $arguments) 
     {
         // save Log the user's login 
